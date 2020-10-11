@@ -1,5 +1,6 @@
 # jigsawPuzzle
 基于Vue的拼图游戏
 
+# Demo ：
 
-https://github.com/LIRUILONGS/jigsawPuzzle/blob/main/index.html
+https://liruilongs.github.io/jigsawPuzzle.github.io/
