@@ -1,0 +1,150 @@
+.off {
+  -webkit-animation: 1s seconddiv;
+  background: transparent;
+}
+
+/* @-webkit-keyframes seconddiv {
+  0% {
+    -webkit-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);
+  }
+  10% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+} */
+
+@keyframes seconddiv {
+  0% {
+    -webkit-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
+  }
+
+  10% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes seconddivs {
+  0% {
+    -webkit-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
+  }
+
+  10% {
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+
+  25% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+
+  50% {
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
+  }
+
+  100% {
+    -webkit-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+  }
+}
+
+.meun-switch {
+  position: absolute;
+  top: 10%;
+  z-index: 2001;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.meun-switch.leave {
+  left: -65px;
+}
+
+.meun-switch.active {
+  left: 0;
+}
+
+.meun-switch:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.meun-switch img {
+  width: 120px;
+  height: 120px;
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  -moz-user-select: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  bottom: 100px;
+  -webkit-animation: 1s seconddivs;
+  background: transparent;
+}
+
+.dirview {
+  z-index: 10;
+  -moz-user-select: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: 1s seconddivs;
+  background: transparent;
+}
+
+
+
+/*# sourceMappingURL=button.css.map */

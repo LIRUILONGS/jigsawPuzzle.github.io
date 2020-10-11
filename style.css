@@ -1,0 +1,127 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+.wrapper {
+
+  cursor: pointer;
+  z-index: 1000;
+  -moz-user-select: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: 1s seconddivs;
+  background: transparent;
+  width: 95vmin;
+  height: 95vmin;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 8px;
+  list-style: none;
+  overflow: hidden;
+  padding: 8px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px solid #000;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s ease, visibility 0s linear;
+}
+
+.overlay-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  border-radius: 5px;
+  border: 1px solid Transparent;
+  box-shadow: 0 0 5px #303133;
+  font-size: 18px;
+  font-family: inherit;
+  background: #fff;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+  color: #fff;
+  background: #00f;
+}
+
+.button:focus:active {
+  background: #fff;
+  color: inherit;
+}
+
+.button:disabled {
+  color: inherit;
+  cursor: default;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.list-move {
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
